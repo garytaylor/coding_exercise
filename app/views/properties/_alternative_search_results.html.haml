@@ -1,0 +1,12 @@
+.alternative_properties
+  %h2 Alternative Properties
+  .header
+    .image
+    .name Name
+    .bedroom_count Bedrooms
+    .distance Distance
+  -if properties.present?
+    -properties.each do |property|
+      =render "property", :property => property
+  -else
+    %p Sorry, no alternatives can be found for this property.

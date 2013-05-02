@@ -1,0 +1,27 @@
+<h1>Listing properties</h1>
+
+<table>
+  <tr>
+    <th>Index</th>
+    <th>Search</th>
+    <th>Show</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @properties.each do |property| %>
+  <tr>
+    <td><%= property.index %></td>
+    <td><%= property.search %></td>
+    <td><%= property.show %></td>
+    <td><%= link_to 'Show', property %></td>
+    <td><%= link_to 'Edit', edit_property_path(property) %></td>
+    <td><%= link_to 'Destroy', property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Property', new_property_path %>

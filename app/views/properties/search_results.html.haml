@@ -1,0 +1,4 @@
+.content.search_exercise
+  %h1 Search For Property
+  =render 'search_header_form', :search_params => @search_params
+  = render 'search_results', :properties => @properties, :alternative_properties => @alternative_properties

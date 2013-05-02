@@ -1,0 +1,9 @@
+=form_for :property, :method => :get, :url => search_results_properties_path, :html => {:class => 'property-search'} do |f|
+  .search-box.wide
+    .field
+      =f.label "Number of bedrooms"
+      =f.text_field :bedroom_count
+    .field
+      =f.label "Name of property if known"
+      =f.text_field :name
+    =f.submit "Search", :class => 'btn btn-small btn-white'

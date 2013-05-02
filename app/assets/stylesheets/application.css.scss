@@ -1,0 +1,99 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+.homepage {
+  .content.search_exercise {
+    h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 40px;
+
+    }
+    form.property-search {
+      height: 183px !important;
+    }
+  }
+  .search-box.wide {
+    width: 400px;
+    height: 150px;
+    .field {
+      label {
+        margin-top: 15px;
+        float: left;
+        display: inline;
+        width: 200px;
+      }
+    }
+  }
+  .search_results {
+    margin-top: 30px;
+    .header {
+      .image, .name, .bedroom_count, .distance {
+        float: left;
+      }
+      .image {
+        width: 50px;
+      }
+      .name {
+        width: 250px;
+        padding-left: 70px;
+      }
+      .bedroom_count {
+        width:70px;
+      }
+      .distance {
+        padding-left: 40px;
+        width: 70px;
+      }
+    }
+    .property {
+      height: 50px;
+      margin-bottom:5px;
+      clear: both;
+      .image {
+        height: 50px;
+        width: 50px;
+        float: left;
+        padding-right: 10px;
+      }
+      .name {
+        display: inline;
+        width: 300px;
+        float: left;
+        padding-right:10px;
+      }
+      .bedroom_count {
+        display: inline;
+        width: 70px;
+        float: left;
+      }
+      .distance {
+        display: inline;
+        width: 70px;
+        float: left;
+      }
+
+
+    }
+  }
+  .alternative_properties {
+    background: #fefefe;
+    -webkit-box-shadow: 0 1px 4px rgba(60,60,60,0.35);
+    box-shadow: 0 1px 4px rgba(60,60,60,0.35);
+    padding: 20px;
+    border: 1px solid #a7b7bb;
+    -webkit-border-radius: 4px;
+    border-radius:4px;
+
+  }
+}

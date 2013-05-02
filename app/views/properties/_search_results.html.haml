@@ -1,0 +1,12 @@
+.search_results
+  - if properties.empty?
+    %h2 Sorry, your search returned no results.  Please refine and try again
+    =render "alternative_search_results", :properties => alternative_properties
+
+  -else
+    .header
+      .image
+      .name Name
+      .bedroom_count Bedrooms
+    - properties.each do |property|
+      =render "property", :property => property
